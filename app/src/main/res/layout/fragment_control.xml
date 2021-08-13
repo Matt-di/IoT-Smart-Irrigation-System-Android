@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentStart="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".ui.fragments.ControlFragment">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="18dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorAccent"
+                    android:padding="8dp"
+                    android:text="Basic Control"
+                    android:textAlignment="center"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/img_motorStatus"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/ic_sprinklers" />
+
+                        <Button
+                            android:id="@+id/btn_toggleMotor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="65dp"
+                            android:background="@drawable/button_background"
+                            android:padding="8dp"
+                            android:text="Motor"
+                            android:textSize="22dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="6dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/img_controlMode"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/ic_person_black_24dp" />
+
+                        <Button
+                            android:id="@+id/btn_changeControlMode"
+                            android:layout_width="140dp"
+                            android:layout_height="60dp"
+                            android:layout_margin="4dp"
+                            android:background="@drawable/button_background"
+                            android:padding="8dp"
+                            android:text=" Control Mode  "
+                            android:textSize="18dp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="18dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/colorAccent"
+                    android:padding="8dp"
+                    android:text="Setup the controlling values"
+                    android:textAlignment="center"
+                    android:textSize="22dp"
+                    android:textStyle="bold" />
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="2"
+                    android:rowCount="2">
+
+                    <Button
+                        android:id="@+id/btn_changeSM"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/button_background"
+                        android:padding="18dp"
+                        android:text="Soil Moisture TV"
+                        android:textAlignment="center" />
+
+                    <Button
+                        android:id="@+id/btn_changeTV"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/button_background"
+                        android:padding="18dp"
+                        android:text="Temperature TV"
+                        android:textAlignment="center"
+
+                        />
+
+                    <Button
+                        android:id="@+id/btn_changeHumidTV"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/button_background"
+                        android:padding="18dp"
+                        android:text="Humidity TV"
+                        android:textAlignment="center" />
+
+                    <Button
+                        android:id="@+id/btn_changePhoneNumber"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/button_background"
+                        android:padding="18dp"
+                        android:text="Phone Number"
+                        android:textAlignment="center" />
+
+                </GridLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</ScrollView>

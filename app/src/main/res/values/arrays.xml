@@ -1,0 +1,25 @@
+<resources>
+    <!-- Reply Preference -->
+    <string-array name="reply_entries">
+        <item>English</item>
+        <item>አማርኛ</item>
+        <item>Afaan Oromoo</item>
+    </string-array>
+
+    <string-array name="reply_values">
+        <item>en</item>
+        <item>am</item>
+        <item>or</item>
+    </string-array>
+
+    <string-array name="base_data_names">
+        <item>Soil Moisture Threshold</item>
+        <item>Temperature Threshold</item>
+        <item>Humidity Threshold</item>
+        <item>Motor Status </item>
+        <item>Control Mode</item>
+        <item>API Key</item>
+        <item>Request Time</item>
+        <item>Phone Number</item>
+    </string-array>
+</resources>

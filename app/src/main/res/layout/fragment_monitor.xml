@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:scrollY="0dp">
+
+    <LinearLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Current Sensor Data"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_updatedDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Updated : "
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+
+            />
+
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:layout_width="81dp"
+                            android:layout_height="39dp"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="4dp"
+                            android:src="@drawable/ic_growing_seed" />
+
+                        <com.github.lzyzsd.circleprogress.CircleProgress
+                            android:id="@+id/circle_progress1"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            app:circle_progress="20"
+                            app:circle_text_color="#f33434"
+                            app:circle_text_size="25dp" />
+
+                        <TextView
+                            style="@style/TextAppearance.AppCompat.Body2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Soil Moisture %"
+
+                            />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:layout_width="81dp"
+                            android:layout_height="39dp"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="4dp"
+                            android:src="@drawable/ic_hot" />
+
+
+                        <com.github.lzyzsd.circleprogress.CircleProgress
+                            android:id="@+id/circle_progress2"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            app:circle_progress="20"
+                            app:circle_text_color="#f33434"
+                            app:circle_text_size="25dp" />
+
+                        <TextView
+                            style="@style/TextAppearance.AppCompat.Body2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Temperature  %"
+
+                            />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    app:cardElevation="4dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="8dp">
+
+                        <ImageView
+                            android:layout_width="81dp"
+                            android:layout_height="39dp"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="4dp"
+                            android:src="@drawable/ic_humidity" />
+
+
+                        <com.github.lzyzsd.circleprogress.CircleProgress
+                            android:id="@+id/circle_progress"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            app:circle_progress="20"
+                            app:circle_text_color="#f33434"
+                            app:circle_text_size="25dp" />
+
+                        <TextView
+                            style="@style/TextAppearance.AppCompat.Body2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Humidity %"
+
+                            />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_seeGraphically"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="14dp"
+            android:background="@drawable/button_background"
+            android:drawableEnd="@android:drawable/ic_menu_slideshow"
+
+            android:padding="5dp"
+            android:text="See Graphically"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Detail Information"
+            android:textAlignment="center"
+
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_baseData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:padding="4dp" />
+
+
+    </LinearLayout>
+
+</ScrollView>
